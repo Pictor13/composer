@@ -184,7 +184,7 @@ class Filesystem
             }
             if (!@mkdir($directory, 0777, true)) {
                 throw new \RuntimeException(
-                    $directory.' does not exist and could not be created.'
+                    'cannot access or create '.$directory
                 );
             }
         }
